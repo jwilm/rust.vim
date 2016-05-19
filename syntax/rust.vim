@@ -162,7 +162,7 @@ syn cluster   rustAttributeContents contains=rustString,rustCommentLine,rustComm
 syn region    rustDerive      start="derive(" end=")" contained contains=rustDeriveTrait
 " This list comes from src/libsyntax/ext/deriving/mod.rs
 " Some are deprecated (Encodable, Decodable) or to be removed after a new snapshot (Show).
-syn keyword   rustDeriveTrait contained Clone Hash RustcEncodable RustcDecodable Encodable Decodable PartialEq Eq PartialOrd Ord Rand Show Debug Default FromPrimitive Send Sync Copy
+syn keyword   rustDeriveTrait contained Clone Hash RustcEncodable RustcDecodable Encodable Decodable PartialEq Eq PartialOrd Ord Rand Show Debug Default FromPrimitive Send Sync Copy Serialize Deserialize
 
 " dyn keyword: It's only a keyword when used inside a type expression, so
 " we make effort here to highlight it only when Rust identifiers follow it
